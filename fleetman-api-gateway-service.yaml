@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: fleetman-api-gateway
+spec:
+  selector:
+    app: fleetman-api-gateway
+  ports:
+    - name: tes1
+      protocol: TCP
+      port: 8080
+      targetPort: 8080
+    - name: tes2
+      protocol: TCP
+      port: 30020
+      targetPort: 8080
+  type: NodePort

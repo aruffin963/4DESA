@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fleetman-webapp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: fleetman-webapp
+  template:
+    metadata:
+      labels:
+        app: fleetman-webapp
+    spec:
+      containers:
+      - name: fleetman-webapp
+        image: supinfo4kube/web-app:1.0.0-dockercompose
+        env:
+          - name: SPRING_PROFILES_ACTIVE
+            value: production-microservice
+        ports:
+          - containerPort: 80

@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: fleetman-queue
+spec:
+  selector:
+    app: fleetman-queue
+  ports:
+    - name: tes1
+      protocol: TCP
+      port: 8161
+      targetPort: 8161
+    - name: tes2
+      protocol: TCP
+      port: 61616
+      targetPort: 61616
+  type: LoadBalancer  
