@@ -15,8 +15,8 @@ spec:
       containers:
       - name: fleetman-webapp
         image: supinfo4kube/web-app:1.0.0-dockercompose
-        nodeSelector:
-          kubernetes.io/arch: arm64
+      nodeSelector:
+        kubernetes.io/arch: arm64
         env:
           - name: SPRING_PROFILES_ACTIVE
             value: production-microservice
