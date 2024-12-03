@@ -13,10 +13,10 @@ spec:
         app: fleetman-webapp
     spec:
       containers:
-      - name: fleetman-webapp
-        image: supinfo4kube/web-app:1.0.0-dockercompose
-      env:
-        - name: SPRING_PROFILES_ACTIVE
-          value: production-microservice
-      ports:
-        - containerPort: 80
+        - name: fleetman-webapp
+          image: supinfo4kube/web-app:1.0.0
+          env:
+            - name: SPRING_PROFILES_ACTIVE
+              value: production-microservice
+          ports:
+            - containerPort: 80

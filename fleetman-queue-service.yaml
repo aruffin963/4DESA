@@ -14,4 +14,4 @@ spec:
       protocol: TCP
       port: 61616
       targetPort: 61616
-  type: LoadBalancer  
+  type: ClusterIP

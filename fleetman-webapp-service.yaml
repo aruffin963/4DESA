@@ -5,7 +5,7 @@ metadata:
 spec:
   selector:
     app: fleetman-webapp
- ports:
+  ports:
     - name: test1
       protocol: TCP
       port: 80

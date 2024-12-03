@@ -10,8 +10,5 @@ spec:
       protocol: TCP
       port: 8080
       targetPort: 8080
-    - name: tes2
-      protocol: TCP
-      port: 30020
-      targetPort: 8080
+      nodePort: 30020
   type: NodePort
