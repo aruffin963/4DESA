@@ -6,11 +6,11 @@ spec:
   selector:
     app: fleetman-queue
   ports:
-    - name: tes1
+    - name: http
       protocol: TCP
       port: 8161
       targetPort: 8161
-    - name: tes2
+    - name: custom-port
       protocol: TCP
       port: 61616
       targetPort: 61616
