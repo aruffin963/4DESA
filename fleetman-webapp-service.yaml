@@ -10,8 +10,10 @@ spec:
       protocol: TCP
       port: 80
       targetPort: 80
+      nodePort: 30080
     - name: custom-port
       protocol: TCP
-      port: 30080
-      targetPort: 8080
+      port: 81
+      targetPort: 80
+      nodePort: 30080
   type: NodePort
