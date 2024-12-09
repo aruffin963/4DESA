@@ -6,7 +6,7 @@ spec:
   selector:
     app: fleetman-api-gateway
   ports:
-    - name: tes1
+    - name: http
       protocol: TCP
       port: 8080
       targetPort: 8080
